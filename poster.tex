@@ -11,7 +11,7 @@
 \usepackage{lmodern}
 \usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
 \usetheme{gemini}
-\usecolortheme{gemini}
+\usecolortheme{bristol}
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tikz}
@@ -66,6 +66,14 @@
 
 \begin{document}
 
+\addtobeamertemplate{headline}{} 
+{
+    \begin{tikzpicture}[remember picture,overlay] 
+    \node [anchor=north east, inner sep=1cm] at ([xshift=0cm,yshift=4.25cm]current page.north east)     {\includegraphics[height=15cm]{fig/logos/UoB_logo_White_24.pdf}}; 
+    \end{tikzpicture} 
+}
+% \logoright{\includegraphics[height=10cm]{fig/logos/UoB_logo_White_24.pdf}}
+
 \begin{frame}[t]
 \begin{columns}[t]
 \separatorcolumn
@@ -78,11 +86,8 @@
 
     \begin{figure}
       \centering
-      \begin{tikzpicture}[scale=6]
-        \draw[step=0.25cm,color=gray] (-1,-1) grid (1,1);
-        \draw (1,0) -- (0.2,0.2) -- (0,1) -- (-0.2,0.2) -- (-1,0)
-          -- (-0.2,-0.2) -- (0,-1) -- (0.2,-0.2) -- cycle;
-      \end{tikzpicture}
+      \includegraphics[width=0.75\textwidth]{fig/kitten.jpg}
+      % Source: https://www.overleaf.com/latex/templates/university-of-bristol-school-of-mathematics-poster-template/pmrhmqwkxjqb
       \caption{A figure caption.}
     \end{figure}
 
