@@ -1,5 +1,6 @@
 # output
 *.pdf
+!poster.pdf
 
 # intermediate files
 *.aux

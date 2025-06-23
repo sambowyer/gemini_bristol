@@ -1,3 +1,21 @@
+# University of Bristol Poster Template
+
+This is a template for creating posters for the University of Bristol based on the [Gemini](https://github.com/anishathalye/gemini) template (see their README below).
+
+The only differences are in colours and the logo (and the kitten).
+
+<p align="center">
+<a href="poster.pdf">
+<img src="poster.png">
+</a>
+</p>
+
+
+
+
+----
+
+
 # Gemini [![Build Status](https://github.com/anishathalye/gemini/actions/workflows/ci.yml/badge.svg)](https://github.com/anishathalye/gemini/actions/workflows/ci.yml)
 
 Gemini is a modern LaTeX [beamerposter] theme.
